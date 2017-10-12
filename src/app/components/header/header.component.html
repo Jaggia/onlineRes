@@ -2,21 +2,24 @@
 <mdb-navbar SideClass="navbar navbar-expand-md navbar-dark indigo">
 
   <!-- Navbar brand -->
-  <logo><a class="navbar-brand mr-auto" href="#">Anadi Jaggia</a></logo>
+  <logo><a class="navbar-brand mr-auto" href="#">Portfolio</a></logo>
 
   <!-- Collapsible content -->
   <links>
 
     <!-- Links -->
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link waves-light" mdbRippleRadius>Home<span class="sr-only">(current)</span></a>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" class="nav-item">
+        <a routerLink="/"
+           class="nav-link waves-light" mdbRippleRadius>Home<span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link waves-light" mdbRippleRadius>About</a>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" class="nav-item">
+        <a routerLink="/about"
+          class="nav-link waves-light" mdbRippleRadius>Experience</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link waves-light" mdbRippleRadius>Experience</a>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" class="nav-item">
+        <a routerLink="/contact"
+           class="nav-link waves-light" mdbRippleRadius>Contact</a>
       </li>
 
     </ul>

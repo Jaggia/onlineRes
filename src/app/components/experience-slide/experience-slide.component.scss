@@ -8,23 +8,48 @@
   transform: (-50%);
 }
 
-div {
+ul {
+  list-style: none;
+}
+
+#lineHolder {
   margin: 10px auto;
   width: 60%;
   position:relative;
   text-align:center;
-  animation: slideIn 3s forwards;
+  animation: slideIn 1s forwards;
+}
+
+#textBox {
+  margin-top: 15vh;
+  z-index: 1;
+  position: absolute;
 }
 
 #first {
+  margin-top: 15vh;
   color :  #3f51b5;
   margin-right: 1px;
+}
+
+#second {
+  margin-top: 15vh;
+  color :  #3f51b5;
+  margin-right: 1px;
+}
+
+#third {
+  margin-top: 15vh;
+  color :  #3f51b5;
+  margin-right: 1px;
+}
+
+.list-group-item {
+  border: 0px;
 }
 
 /* Standard syntax */
 @keyframes slideIn {
   0%   {height: 0vh;}
-  33%  {height: 33vh;}
-  66%  {height: 66vh}
   100% {height: 89vh;}
 }
